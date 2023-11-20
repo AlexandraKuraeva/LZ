@@ -4,7 +4,7 @@
 
 <script>
 export default {
-	name: "my-button"
+  name: 'my-button',
 };
 </script>
 
@@ -12,14 +12,17 @@ export default {
 .btn {
   min-width: 232px;
   padding: 12px 20px;
-  background-color: #9E896A;
+  background-color: #9e896a;
   border-radius: 36px;
   color: #fff;
   font-size: 16px;
-  transition: all .3s;
+  transition: all 0.3s;
 
-  &:hover{
-	background-color: #553E19;
+  &:hover {
+    background-color: #6c4b18;
+  }
+  &:focus {
+    background-color: #553e19;
   }
 }
 </style>

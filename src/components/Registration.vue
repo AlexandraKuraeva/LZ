@@ -6,8 +6,8 @@
     <form action="/register " method="POST">
       <ul>
         <li class="text-field">
-          <label for="name">User name</label>
-          <my-input id="name" placeholder="Enter your User name" />
+          <label for="name">Email Address</label>
+          <my-input id="name" placeholder="Enter your Email Address" />
         </li>
         <li class="text-field">
           <label for="name">User name</label>
