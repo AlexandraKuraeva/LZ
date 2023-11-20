@@ -1,0 +1,42 @@
+@mixin breakpoint($class) {
+	@if $class == w1600 {
+		@media only screen and (max-width: 1600px) {
+			@content;
+		}
+	} @else if $class == w1440 {
+		@media only screen and (max-width: 1445px) {
+			@content;
+		}
+	} @else if $class == w1366 {
+		@media only screen and (max-width: 1365px) {
+			@content;
+		}
+	} @else if $class == w1200 {
+		@media only screen and (max-width: 1200px) {
+			@content;
+		}
+	} @else if $class == w1000 {
+		@media only screen and (max-width: 980px) {
+			@content;
+		}
+	} @else if $class == w768 {
+		@media only screen and (max-width: 765px) {
+			@content;
+		}
+	} @else if $class == w500 {
+		@media only screen and (max-width: 576px) {
+			@content;
+		}
+	}
+}
+
+
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$maxWidth: 1400;
+	$addSize: $pcSize - $mobSize;
+	$maxWidth: $maxWidth - 375;
+	font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth}));
+}
+
+
