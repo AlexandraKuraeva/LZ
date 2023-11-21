@@ -1,6 +1,4 @@
 <script setup>
-import { defineEmits } from 'vue';
-
 const props = defineProps({
   items: {
     type: Array,
@@ -11,11 +9,8 @@ const props = defineProps({
     required: true,
   },
 });
-
 const emit = defineEmits(['change-item']);
-
 const clickOnItem = (itemName) => {
-  console.log(itemName);
   emit('change-item', itemName);
 };
 </script>

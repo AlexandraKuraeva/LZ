@@ -1,4 +1,6 @@
-<script></script>
+<script setup>
+
+</script>
 <template>
   <div class="left-block__inner">
     <div class="image-block">

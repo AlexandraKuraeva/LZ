@@ -1,32 +1,18 @@
-<script>
+<script setup>
 import { ref } from 'vue';
 import Authorization from '@/components/Authorization.vue';
 import Registration from '@/components/Registration.vue';
 import TopForm from '@/components/TopForm.vue';
 import LeftBlock from '@/components/LeftBlock.vue';
-export default {
-  components: {
-    Authorization,
-    Registration,
-    TopForm,
-    LeftBlock,
-  },
-  setup() {
-    const tabItems = [
-      { name: 'authorization', label: 'Login' },
-      { name: 'registration', label: 'Register' },
-    ];
-    const selectedItem = ref('authorization');
 
-    const changeItem = (itemName) => {
-      selectedItem.value = itemName;
-    };
-    return {
-      tabItems,
-      changeItem,
-      selectedItem,
-    };
-  },
+const tabItems = [
+  { name: 'authorization', label: 'Login' },
+  { name: 'registration', label: 'Register' },
+];
+const selectedItem = ref('authorization');
+
+const changeItem = (itemName) => {
+  selectedItem.value = itemName;
 };
 </script>
 
@@ -42,7 +28,7 @@ export default {
             <TopForm :items="tabItems" :selectedItem="selectedItem" @change-item="changeItem" />
             <transition name="fade" mode="out-in">
               <component
-                :is="selectedItem === 'authorization' ? 'Authorization' : 'Registration'"
+                :is="selectedItem === 'authorization' ? Authorization : Registration"
                 key="componentKey"
               />
             </transition>
