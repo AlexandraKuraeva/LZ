@@ -1,12 +1,10 @@
 <script setup>
-defineOptions({ name: 'my-input', });
+defineOptions({ name: 'my-input' });
 </script>
 
 <template>
   <input class="input" type="text" required />
 </template>
-
-
 
 <style scoped>
 .input {
@@ -15,6 +13,7 @@ defineOptions({ name: 'my-input', });
   padding: 15px 30px;
   font-size: 16px;
   border: 1px solid #9e896a;
+  transition: box-shadow 0.2s;
   &::placeholder {
     color: #acacac;
     font-family: 'Poppins' sans-serif;
@@ -23,6 +22,7 @@ defineOptions({ name: 'my-input', });
   }
   &:focus {
     border: 1px solid #70614c;
+    box-shadow: 0px 0px 4px 1px #70614c;
   }
 }
 </style>

@@ -3,7 +3,7 @@ defineOptions({ name: 'my-button' });
 </script>
 
 <template>
-  <button type="submit" class="btn"><slot></slot></button>
+  <button class="btn"><slot></slot></button>
 </template>
 
 <style>

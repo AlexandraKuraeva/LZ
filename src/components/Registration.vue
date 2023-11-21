@@ -17,12 +17,11 @@
           <div class="text-field__pass"><my-pass-input /></div>
         </li>
       </ul>
-
-      <div class="content-right"><my-button class="form-content__btn">Register</my-button></div>
+      <div class="content-right">
+        <my-button type="submit" class="form-content__btn">Register</my-button>
+      </div>
     </form>
   </div>
 </template>
-<script setup>
-
-</script>
+<script setup></script>
 <style lang="scss"></style>

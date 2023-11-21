@@ -13,9 +13,10 @@
           <my-pass-input />
         </li>
       </ul>
-
       <a href="#" class="forgot-password">Forgot Password ?</a>
-      <div class="content-right"><my-button class="form-content__btn">Login</my-button></div>
+      <div class="content-right">
+        <my-button type="submit" class="form-content__btn">Login</my-button>
+      </div>
     </form>
   </div>
 </template>

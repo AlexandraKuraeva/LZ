@@ -53,11 +53,8 @@ const changeItem = (itemName) => {
   margin: 0 auto;
   @include breakpoint(w1600) {
     max-width: 1430px;
-    padding: 0 40px;
   }
-  @include breakpoint(w1440) {
-    padding: 0 40px;
-  }
+
   @include breakpoint(w1200) {
     padding: 0 30px;
   }
