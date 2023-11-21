@@ -56,10 +56,6 @@ const clickOnItem = (itemName) => {
     justify-content: center;
     background-color: #f8eddd;
     border-radius: 33px;
-
-    @include breakpoint(w500) {
-      width: 100%;
-    }
   }
 
   &__item {
