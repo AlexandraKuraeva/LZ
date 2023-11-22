@@ -46,6 +46,7 @@ function showHidePassword() {
       id="pas"
       :type="[showPassword ? 'text' : 'password']"
       placeholder="Enter your Password"
+      
     />
   </div>
 </template>
