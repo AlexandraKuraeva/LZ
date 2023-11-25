@@ -21,6 +21,7 @@
 .left-block {
   &__title {
     font-weight: 700;
+
     @include adaptiv-font(37, 24);
     margin-bottom: 5px;
   }
@@ -30,7 +31,14 @@
     bottom: 0;
     left: 0;
     color: #fff;
-    margin: 0 0 55px 69px;
+    margin: 0 0 48px 69px;
+	 @include breakpoint(w1000) {
+    margin: 0 0 25px 50px;
+  }
+  }
+
+  &__subtitle{
+	font-size: 25px;
   }
 }
 .image-block {

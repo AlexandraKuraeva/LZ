@@ -76,6 +76,7 @@ const changeItem = (itemName) => {
 .left-block {
   position: relative;
   width: 54%;
+  height: 100%;
   @include breakpoint(w1000) {
     width: 70%;
     margin-bottom: 60px;
@@ -87,7 +88,7 @@ const changeItem = (itemName) => {
 .right-block {
   width: 46%;
   padding: 0px 60px;
-  margin-top: 110px;
+  margin-top: 100px;
 
   @include breakpoint(w1200) {
     padding: 0;
