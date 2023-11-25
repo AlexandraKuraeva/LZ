@@ -67,9 +67,10 @@ const changeItem = (itemName) => {
 .row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   @include breakpoint(w1000) {
     flex-direction: column;
+    align-items: center;
   }
 }
 .left-block {
@@ -86,8 +87,11 @@ const changeItem = (itemName) => {
 .right-block {
   width: 46%;
   padding: 0px 60px;
+  margin-top: 110px;
+
   @include breakpoint(w1200) {
     padding: 0;
+    margin-top: 0;
   }
   @include breakpoint(w1000) {
     width: 100%;
@@ -99,16 +103,16 @@ const changeItem = (itemName) => {
     padding: 0;
   }
 }
-.form {
+/* .form {
   transition: height 0.25s ease-in-out;
 }
 .form:has(.form-content__desc-reg) {
- height: 680px;
+  margin-top: 150px;
 }
 
 .form:has(.form-content__desc-log) {
-  height: 618px;
-}
+  margin-top: 100px;
+} */
 //styles animation start
 .fade-enter-active,
 .fade-leave-active {
