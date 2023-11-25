@@ -3,7 +3,7 @@
     <p class="form-content__desc-log">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     </p>
-    <form action="/login" method="POSTt">
+    <form action="/login" method="POST">
       <ul>
         <li class="text-field">
           <label for="name">User name</label>

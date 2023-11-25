@@ -6,7 +6,7 @@ defineOptions({ name: 'my-button' });
   <button class="btn"><slot></slot></button>
 </template>
 
-<style>
+<style lang="scss">
 .btn {
   min-width: 232px;
   padding: 12px 20px;

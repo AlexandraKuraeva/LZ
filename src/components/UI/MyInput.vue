@@ -6,7 +6,7 @@ defineOptions({ name: 'my-input' });
   <input class="input" type="text" required />
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .input {
   width: 100%;
   border-radius: 40px;
@@ -16,7 +16,7 @@ defineOptions({ name: 'my-input' });
   transition: box-shadow 0.2s;
   &::placeholder {
     color: #acacac;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 15px;
   }

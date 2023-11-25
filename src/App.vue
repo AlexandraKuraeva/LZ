@@ -29,7 +29,7 @@ const changeItem = (itemName) => {
             <transition name="fade" mode="out-in">
               <component
                 :is="selectedItem === 'authorization' ? Authorization : Registration"
-                key="componentKey"
+                key="selectedItem"
               />
             </transition>
           </div>
@@ -39,7 +39,7 @@ const changeItem = (itemName) => {
   </section>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import '@/assets/styles/mixins.scss';
 .section-def {
   padding: 40px 0;
@@ -99,7 +99,17 @@ const changeItem = (itemName) => {
     padding: 0;
   }
 }
+.form {
+  transition: height 0.25s ease-in-out;
+}
+.form:has(.form-content__desc-reg) {
+ height: 680px;
+}
 
+.form:has(.form-content__desc-log) {
+  height: 618px;
+}
+//styles animation start
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.3s;
@@ -109,4 +119,5 @@ const changeItem = (itemName) => {
   opacity: 0;
   transform: scale(0.9); /* Уменьшение масштаба при входе и выходе */
 }
+//styles animation end
 </style>
